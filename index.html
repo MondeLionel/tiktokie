@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title>TIKTOK CLONE PLAIN CSS HTML</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/video-js.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+</head>
+<style>
+	.loader{
+		position: absolute;
+		overflow: hidden;
+		width: 100vw;
+		height: 100vh;
+		background-image: url("img/trending/11.gif");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		top:0;
+		left:0;
+		z-index: 3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		transform: translateX(100%);
+		transition: transform 0.5s ease;
+	}
+
+	.loader h1{
+		font-weight: 900;
+		font-size: 17vw;
+		letter-spacing:-5px;
+		background-color: #000;
+		padding: 10em;
+		mix-blend-mode: multiply;
+	}
+
+	.loading .loader{
+		transform: translateX(0%);
+	}
+
+
+
+</style>
+<body class="autoplay loading">
+	<div class="loader">
+		<h1>GONGONG</h1>
+	</div>
+	<main id="feed">
+		<div class="post-header">
+			<div class="feed-links">
+				<a href="trending.html">Follow</a>
+				<span>|</span>
+				<a href="index.html" class="active">For you</a>
+			</div>
+		</div>
+		<div class="swiper-container posts">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="post">
+						<!-- video -->
+						<div class="post-video">
+							<video src="video/2.mp4"></video>
+						</div>
+						<div class="post-overlay">
+							<div class="post-sidebar">
+								<a href="#" class="user">
+									<img src="img/users/1.jpg" alt="head" class="img-fluid">
+								</a>
+								<a href="#" class="likes">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 31.984,13.834C 31.9,8.926, 27.918,4.552, 23,4.552c-2.844,0-5.35,1.488-7,3.672 C 14.35,6.040, 11.844,4.552, 9,4.552c-4.918,0-8.9,4.374-8.984,9.282L0,13.834 c0,0.030, 0.006,0.058, 0.006,0.088 C 0.006,13.944,0,13.966,0,13.99c0,0.138, 0.034,0.242, 0.040,0.374C 0.48,26.872, 15.874,32, 15.874,32s 15.62-5.122, 16.082-17.616 C 31.964,14.244, 32,14.134, 32,13.99c0-0.024-0.006-0.046-0.006-0.068C 31.994,13.89, 32,13.864, 32,13.834L 31.984,13.834 z"></path></g></svg>
+									<p>23</p>
+								</a>
+								<a href="#" class="comments">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 27.91,11.79c 0.176,0.792, 0.278,1.606, 0.278,2.442c0,6.456-5.48,11.838-12.696,12.994 c 1.526,0.616, 3.236,0.976, 5.058,0.976c 1.718,0, 3.34-0.316, 4.804-0.866c 1.854,0.632, 3.878,0.796, 5.552,0.796 c-0.87-1.044-1.474-2.068-1.906-2.968C 30.856,23.508, 32,21.314, 32,18.898C 32,16.042, 30.406,13.496, 27.91,11.79zM 25.188,14.232C 25.188,8.582, 19.55,4, 12.594,4S0,8.582,0,14.232c0,2.948, 1.542,5.596, 3.998,7.464 c-0.462,1.192-1.244,2.75-2.57,4.344c 2.516,0, 5.756-0.33, 8.25-1.862c 0.938,0.182, 1.912,0.288, 2.916,0.288 C 19.55,24.464, 25.188,19.884, 25.188,14.232z"></path></g></svg>
+									<p>12 882</p>
+								</a>
+								<a href="#" class="share">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 6,12L 12,12L 12,24L 20,24L 19.958,12L 26,12L 16,2 zM 24,28L 8,28L 8,24L 4,24L 4,28L 4,32L 28,32L 28,28L 28,24L 24,24 z"></path></g></svg>
+									<p>Share</p>
+								</a>
+							</div>
+							<div class="post-details">
+								<div class="post-meta">
+									<p class="live-bubble show">LIVE</p>
+									<p class="time">12:20 am July 31</p>
+									<p class="tags">#yeahboy #mynigga #thatswhatsup</p>
+								</div>
+								<div class="music-tag">
+										<p class="song-title">Living my life so fine</p>
+										<img src="" alt="discogs">
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="post">
+						<!-- video -->
+						<div class="post-video">
+							<video src="video/1.mp4"></video>
+						</div>
+						<div class="post-overlay">
+							<div class="post-sidebar">
+								<a href="#" class="user">
+									<img src="img/users/1.jpg" alt="head" class="img-fluid">
+								</a>
+
+								<a href="#" class="likes">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 31.984,13.834C 31.9,8.926, 27.918,4.552, 23,4.552c-2.844,0-5.35,1.488-7,3.672 C 14.35,6.040, 11.844,4.552, 9,4.552c-4.918,0-8.9,4.374-8.984,9.282L0,13.834 c0,0.030, 0.006,0.058, 0.006,0.088 C 0.006,13.944,0,13.966,0,13.99c0,0.138, 0.034,0.242, 0.040,0.374C 0.48,26.872, 15.874,32, 15.874,32s 15.62-5.122, 16.082-17.616 C 31.964,14.244, 32,14.134, 32,13.99c0-0.024-0.006-0.046-0.006-0.068C 31.994,13.89, 32,13.864, 32,13.834L 31.984,13.834 z"></path></g></svg>
+									<p>23</p>
+								</a>
+								<a href="#" class="comments">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 27.91,11.79c 0.176,0.792, 0.278,1.606, 0.278,2.442c0,6.456-5.48,11.838-12.696,12.994 c 1.526,0.616, 3.236,0.976, 5.058,0.976c 1.718,0, 3.34-0.316, 4.804-0.866c 1.854,0.632, 3.878,0.796, 5.552,0.796 c-0.87-1.044-1.474-2.068-1.906-2.968C 30.856,23.508, 32,21.314, 32,18.898C 32,16.042, 30.406,13.496, 27.91,11.79zM 25.188,14.232C 25.188,8.582, 19.55,4, 12.594,4S0,8.582,0,14.232c0,2.948, 1.542,5.596, 3.998,7.464 c-0.462,1.192-1.244,2.75-2.57,4.344c 2.516,0, 5.756-0.33, 8.25-1.862c 0.938,0.182, 1.912,0.288, 2.916,0.288 C 19.55,24.464, 25.188,19.884, 25.188,14.232z"></path></g></svg>
+									<p>12 882</p>
+								</a>
+								<a href="#" class="share">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 6,12L 12,12L 12,24L 20,24L 19.958,12L 26,12L 16,2 zM 24,28L 8,28L 8,24L 4,24L 4,28L 4,32L 28,32L 28,28L 28,24L 24,24 z"></path></g></svg>
+									<p>Share</p>
+								</a>
+							</div>
+							<div class="post-details">
+								<div class="post-meta">
+									<p class="live-bubble">LIVE</p>
+									<p class="time">12:20 am July 31</p>
+									<p class="tags">#yeahboy #mynigga #thatswhatsup</p>
+								</div>
+								<div class="music-tag">
+										<p class="song-title">Living my life so fine</p>
+										<img src="" alt="discogs">
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+										<div class="post">
+						<!-- video -->
+						<div class="post-video">
+							<video src="video/3.mp4"></video>
+						</div>
+						<div class="post-overlay">
+							<div class="post-sidebar">
+								<a href="#" class="user">
+									<img src="img/users/1.jpg" alt="head" class="img-fluid">
+								</a>
+								<a href="#" class="likes">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 31.984,13.834C 31.9,8.926, 27.918,4.552, 23,4.552c-2.844,0-5.35,1.488-7,3.672 C 14.35,6.040, 11.844,4.552, 9,4.552c-4.918,0-8.9,4.374-8.984,9.282L0,13.834 c0,0.030, 0.006,0.058, 0.006,0.088 C 0.006,13.944,0,13.966,0,13.99c0,0.138, 0.034,0.242, 0.040,0.374C 0.48,26.872, 15.874,32, 15.874,32s 15.62-5.122, 16.082-17.616 C 31.964,14.244, 32,14.134, 32,13.99c0-0.024-0.006-0.046-0.006-0.068C 31.994,13.89, 32,13.864, 32,13.834L 31.984,13.834 z"></path></g></svg>
+									<p>23</p>
+								</a>
+								<a href="#" class="comments">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 27.91,11.79c 0.176,0.792, 0.278,1.606, 0.278,2.442c0,6.456-5.48,11.838-12.696,12.994 c 1.526,0.616, 3.236,0.976, 5.058,0.976c 1.718,0, 3.34-0.316, 4.804-0.866c 1.854,0.632, 3.878,0.796, 5.552,0.796 c-0.87-1.044-1.474-2.068-1.906-2.968C 30.856,23.508, 32,21.314, 32,18.898C 32,16.042, 30.406,13.496, 27.91,11.79zM 25.188,14.232C 25.188,8.582, 19.55,4, 12.594,4S0,8.582,0,14.232c0,2.948, 1.542,5.596, 3.998,7.464 c-0.462,1.192-1.244,2.75-2.57,4.344c 2.516,0, 5.756-0.33, 8.25-1.862c 0.938,0.182, 1.912,0.288, 2.916,0.288 C 19.55,24.464, 25.188,19.884, 25.188,14.232z"></path></g></svg>
+									<p>12 882</p>
+								</a>
+								<a href="#" class="share">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 6,12L 12,12L 12,24L 20,24L 19.958,12L 26,12L 16,2 zM 24,28L 8,28L 8,24L 4,24L 4,28L 4,32L 28,32L 28,28L 28,24L 24,24 z"></path></g></svg>
+									<p>Share</p>
+								</a>
+							</div>
+							<div class="post-details">
+								<div class="post-meta">
+									<p class="live-bubble show">LIVE</p>
+									<p class="time">12:20 am July 31</p>
+									<p class="tags">#yeahboy #mynigga #thatswhatsup</p>
+								</div>
+								<div class="music-tag">
+										<p class="song-title">Living my life so fine</p>
+										<img src="" alt="discogs">
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navigation">
+			<a href="index.html" class="nav-item">
+				
+				 <svg width="32.236000061035156" height="32" viewBox="0 0 32.236000061035156 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 1.656,17.756L 16,5.324l 14.344,12.432C 30.534,17.92, 30.768,18, 31,18c 0.28,0, 0.558-0.118, 0.756-0.344 c 0.362-0.418, 0.316-1.048-0.1-1.412l-15-13c-0.376-0.326-0.934-0.326-1.31,0L 10,7.876L 10,6 c0-1.104-0.896-2-2-2S 6,4.896, 6,6l0,5.342 L 0.344,16.244c-0.416,0.362-0.462,0.994-0.1,1.412C 0.608,18.072, 1.238,18.118, 1.656,17.756zM 12,22l 8,0 l0,10 l 6,0 c 1.104,0, 2-0.896, 2-2l0-9.802 c0-0.6-0.268-1.166-0.732-1.546l-10-8.198C 16.9,10.152, 16.45,10, 16,10 C 15.55,10, 15.1,10.152, 14.732,10.454l-10,8.198C 4.268,19.030, 4,19.598, 4,20.198L 4,30 c0,1.104, 0.896,2, 2,2l 6,0 L 12,22 z"></path></g></svg>
+				 <p>FEED</p>
+			</a>
+			<a href="discover.html" class="nav-item">
+				
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" enable-background="new 0 0 16 16" xml:space="preserve" fill="#000000"> <g><path d="M 30.118,21.638c-5.446,5.444-14.308,5.448-19.754,0C 7.728,19.004, 6.278,15.496, 6.278,11.76 s 1.452-7.244, 4.084-9.876c 0.39-0.39, 0.39-1.024,0-1.414s-1.024-0.39-1.414,0C 5.936,3.48, 4.278,7.49, 4.278,11.76 s 1.66,8.282, 4.67,11.292C 11.49,25.596, 14.686,27.082, 18,27.548L 18,30 L 15,30 C 14.448,30, 14,30.448, 14,31C 14,31.552, 14.448,32, 15,32l 8,0 c 0.552,0, 1-0.448, 1-1c0-0.552-0.448-1-1-1L 20,30 l0-2.288 c 0.080,0.002, 0.16,0.012, 0.24,0.012 c 4.088,0, 8.178-1.556, 11.292-4.67c 0.39-0.39, 0.39-1.024,0-1.414S 30.508,21.248, 30.118,21.638zM 20.24,0C 13.744,0, 8.48,5.266, 8.48,11.76s 5.266,11.76, 11.76,11.76S 32,18.256, 32,11.76S 26.734,0, 20.24,0z M 20.24,21.52c-5.382,0-9.76-4.378-9.76-9.76C 10.48,6.378, 14.858,2, 20.24,2C 25.622,2, 30,6.378, 30,11.76 C 30,17.142, 25.622,21.52, 20.24,21.52z"></path></g></svg>
+				<p>DISCOVER</p>
+			</a>
+			<a href="#" class="nav-item add-post">
+				
+				 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 17,2C 8.716,2, 2,8.716, 2,17S 8.716,32, 17,32S 32,25.284, 32,17S 25.284,2, 17,2z M 17,30 C 9.832,30, 4,24.168, 4,17S 9.832,4, 17,4S 30,9.832, 30,17S 24.168,30, 17,30zM 25,16L 18,16 L 18,9 C 18,8.448, 17.552,8, 17,8S 16,8.448, 16,9L 16,16 L 9,16 C 8.448,16, 8,16.448, 8,17C 8,17.552, 8.448,18, 9,18L 16,18 l0,7 C 16,25.552, 16.448,26, 17,26S 18,25.552, 18,25L 18,18 l 7,0 C 25.552,18, 26,17.552, 26,17C 26,16.448, 25.552,16, 25,16z"></path></g></svg>
+				 <p>ADD NEW POST</p>
+			</a>
+			<a href="#" class="nav-item">
+			
+				<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 1.898,29.382c 0.164,0.352, 0.518,0.576, 0.906,0.576c 2.87,0, 5.298-0.698, 8.056-2.324 C 12.198,27.846, 14.84,28.108, 16,28.108c 8.756,0, 15.878-5.846, 15.878-13.034S 24.756,2.042, 16,2.042S 0.122,7.886, 0.122,15.074 c0,3.388, 1.634,6.662, 4.51,9.088c-0.652,1.48-1.522,2.876-2.594,4.154C 1.79,28.616, 1.734,29.032, 1.898,29.382z M 2.122,15.074 c0-6.084, 6.226-11.034, 13.878-11.034s 13.878,4.95, 13.878,11.034S 23.652,26.108, 16,26.108c-1.148,0-4.136-0.308-5.146-0.504 c-0.244-0.044-0.498,0.002-0.71,0.128C 8.28,26.872, 6.654,27.524, 4.914,27.8c 0.75-1.136, 1.374-2.336, 1.86-3.586 c 0.162-0.418, 0.030-0.89-0.328-1.16C 3.656,20.942, 2.122,18.106, 2.122,15.074z"></path></g></svg>
+				<p>CHAT</p>
+			</a>
+			<a href="#" class="nav-item">
+				
+				<svg width="32" height="33.762001037597656" viewBox="0 0 32 33.762001037597656" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 22,6c0-3.212-2.788-6-6-6S 10,2.788, 10,6c0,3.212, 2.788,6, 6,6S 22,9.212, 22,6zM 16,14c-5.256,0-10,5.67-10,12.716s 20,7.046, 20,0S 21.256,14, 16,14z"></path></g></svg>
+				<p>PROFILE</p>
+			</a>
+		</div>
+		
+	</main>	
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/video.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/main.js"></script>
+</html>
