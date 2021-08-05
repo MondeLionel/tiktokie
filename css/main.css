@@ -7,7 +7,7 @@ body{
   
 }
 #feed{
-  max-width: 500px;
+  max-width: 400px;
   margin:0 auto;
   position:relative;
 }
@@ -223,7 +223,7 @@ body{
   align-items: center;
   width: 100%;
   padding: 1em;
-  max-width: 500px;
+  max-width: 400px;
   /*! flex: 1; */
 }
 .nav-item{
@@ -315,17 +315,18 @@ body{
 /* TRENDING PAGE */
 
 .trending{min-height: 100vh;background-image: linear-gradient(#fc3a3a,#2a2aef);}
+
 .trending-card{
   
   height: 300px;
   overflow: hidden;
   color: #fff;
   background-color: #fff;
-  max-width: 9em;
   border-radius: 15px;
-  margin: 1em auto;
+  margin: 10px;
   border: none;
   margin-top: 0;
+  min-width: 200px;
 }
 
 .trending-gif{
@@ -351,6 +352,9 @@ body{
   
   padding: 0.5em;
   overflow: hidden;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
 }
 
 .trending .heading{
