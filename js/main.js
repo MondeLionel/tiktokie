@@ -24,9 +24,12 @@ let body = $('body');
 // 	$("body").removeClass("loading")
 // })
 
-window.addEventListener("loadeddata", function(e){
-	$("body").removeClass("loading")
-})
+window.addEventListener("load", function(e){
+	$("video").on("loadeddata", function(){
+		// console.log($('video'))
+		$("body").removeClass("loading")
+	})
+});
 
 
 if(body.hasClass("autoplay") === true){
