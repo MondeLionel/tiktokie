@@ -20,9 +20,13 @@ var postSwiper = new Swiper('.posts', {
 let body = $('body');
 
 
-	$(window).load(function(){
-			$("body").removeClass("loading")
-	})
+// $(window).load(function(){
+// 	$("body").removeClass("loading")
+// })
+
+window.addEventListener("loadeddata", function(e){
+	$("body").removeClass("loading")
+})
 
 
 if(body.hasClass("autoplay") === true){
@@ -30,9 +34,10 @@ if(body.hasClass("autoplay") === true){
 		$(".swiper-slide").find("video").trigger("play");
 		console.log("clicked post overlay")
 	})
-	// this should be a setting to autoload and autoplay videos
-// or only make it available on wifi connection
-	let autoPlayVideo = () => {
+
+
+
+let autoPlayVideo = () => {
 	console.log("autoplaying video")
 	setTimeout (function(){
 		$(".swiper-slide").find("video").attr("muted", "");
@@ -51,11 +56,7 @@ postSwiper.on('slideChange', autoPlayVideo)
 		$(".swiper-slide").find("video").attr("muted", "");
 
 	}
-
-	// $(".post-overlay").on('click', playVideo)
-
 }
-
 
 // class based nav
 
@@ -69,14 +70,3 @@ $('.feed-links a').on('click', function(){
 		$(this).addClass('active');
 	$(this).siblings().removeClass('active')
 })
-
-
-
-
-
-
-
-
-
-
-
